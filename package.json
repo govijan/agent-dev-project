@@ -1,0 +1,43 @@
+{
+  "name": "agent-dev-project",
+  "version": "1.0.0",
+  "description": "1. Copy CLAUDE.md, .claude/, and docs/ into your repo root (merge with existing files if present). 2. Restart your Claude Code session so the new .claude/agents/ directory is picked up by the watcher. 3. Commit everything — the agent team is shared with your dev team via git.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint . && prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test:coverage": "vitest run --coverage",
+    "test:perf": "echo 'no perf tests yet' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govijan/agent-dev-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/govijan/agent-dev-project/issues"
+  },
+  "homepage": "https://github.com/govijan/agent-dev-project#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "autocannon": "^8.0.0",
+    "eslint": "^10.7.0",
+    "prettier": "^3.9.5",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^4.1.10",
+    "zod": "^4.4.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}
